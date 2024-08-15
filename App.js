@@ -8,7 +8,8 @@ import PropsSample from './components/PropsSample';
 import CSSExample from './components/cssExample';
 import InputExample from './components/InputExample';
 import FormExample from './components/FormExample';
+import FlatListExample from './components/FlatListExample';
 
 
-export default FormExample;
+export default FlatListExample;
 
