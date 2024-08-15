@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet, TextInput } from 'react-native';
 import styles from './styles';
-import InputField from './InputField';
 
 
 const FormExample = () => {
@@ -47,14 +46,14 @@ const FormExample = () => {
             <TextInput
                 style={style.inputStyle}
                 placeholder="Enter Email"
-                value={name}
+                value={email}
                 onChangeText={(value)=>setemail(value)}
             />   
             <TextInput
                 style={style.inputStyle}
                 placeholder="Enter Password"
-                secureTextEntry={props.isVisible}
-                value={name}
+                secureTextEntry={isVisible}
+                value={pass}
                 onChangeText={(value)=>setPass(value)}
             />   
 
