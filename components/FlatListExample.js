@@ -94,6 +94,7 @@ const FlatListExample = () => {
             <FlatList
                 data={userList}
                 renderItem={({ item }) => <Text style={style.listItemStyle}>{item.id} : {item.name}</Text>}
+                
                 keyExtractor={item => item.id}
             />
         </View>
