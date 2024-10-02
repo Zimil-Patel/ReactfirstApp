@@ -11,19 +11,28 @@ import FormExample from './components/FormExample';
 import FlatListExample from './components/FlatListExample';
 import LoginPage from './components/LoginPageTask/LoginPage';
 import HomePage from './components/LoginPageTask/HomePage';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Car from './components/state_web';
 
-const Stack = createNativeStackNavigator();
+// Example of navigation
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-export default function App() {
-    return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName="Login">
-                <Stack.Screen name="Login" component={LoginPage}  options={{ headerShown: false }}/>
-                <Stack.Screen name="Home" component={HomePage}/>
-            </Stack.Navigator>
-        </NavigationContainer>
-    );
+// const Stack = createNativeStackNavigator();
+
+// export default function App() {
+//     return (
+//         <NavigationContainer>
+//             <Stack.Navigator initialRouteName="Login">
+//                 <Stack.Screen name="Login" component={LoginPage}  options={{ headerShown: false }}/>
+//                 <Stack.Screen name="Home" component={HomePage}/>
+//             </Stack.Navigator>
+//         </NavigationContainer>
+//     );
+// }
+
+
+
+
+export default function App () {
+    return <Car brand="Tesla" color="Grey" model="Model S" />
 }
-
